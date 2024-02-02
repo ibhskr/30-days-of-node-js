@@ -12,8 +12,7 @@ function readFileContent(filePath) {
       console.log(data);
     }
   });
-}
-
+};
 readFileContent(file1);
 readFileContent(emptyFile);
-readFileContent(noExist)
+readFileContent(noExist);
