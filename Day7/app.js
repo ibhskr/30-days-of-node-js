@@ -7,10 +7,7 @@ function requestLoggerMiddleware(req, res, next) {
   console.log(`${timestamp} - ${method} request received`);
   next();
 }
-
-
 app.use(requestLoggerMiddleware);
-
 
 app.get("/",(req,res)=>{
     console.log('req "/" route')
