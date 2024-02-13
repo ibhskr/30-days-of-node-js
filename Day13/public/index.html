@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebSocket Test</title>
+</head>
+<body>
+  <script>
+    const socket = new WebSocket(`ws://${window.location.hostname}:${window.location.port}`);
+
+    socket.onopen = function(event) {
+      console.log('WebSocket connection established');
+      
+      // Send a test message to the server
+      socket.send('Hello, WebSocket!');
+    };
+
+    socket.onmessage = function(event) {
+      console.log('Received message:', event.data);
+    };
+  </script>
+</body>
+</html>
