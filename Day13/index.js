@@ -8,10 +8,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const app = express();
 const server = http.createServer(app);
-
 setupWebSocket(server);
 
-// Serve HTML page with JavaScript to establish WebSocket connection
 app.get('/websocket', function(req, res) {
   res.sendFile(__dirname + '/public/index.html');
 });
