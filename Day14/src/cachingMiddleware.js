@@ -1,5 +1,5 @@
 const cache = {};
-const cacheDuration = 6 * 1000; // Cache duration in milliseconds (1 minute)
+const cacheDuration = 6 * 1000; // Cache duration in milliseconds (6 sec)
 
 function cachingMiddleware(req, res, next) {
   const key = req.originalUrl; // Using the request URL as the cache key
