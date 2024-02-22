@@ -37,7 +37,7 @@ function updateProduct(productId, updatedProduct) {
 function deleteProduct(productId) {
   // Your implementation here
 }
-```
+``
 
 **Expected Output:**
 - The functions should perform the respective CRUD operations on the "Product" collection in MongoDB.
