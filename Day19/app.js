@@ -2,7 +2,7 @@ import express from "express";
 import User from "./userModel.js";
 import connectToMongoDB from "./connectDB.js";
 const app = express();
-
+//--
 async function addUserToDatabase(user) {
   try {
     const response = await User.create(user);
