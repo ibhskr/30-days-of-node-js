@@ -5,6 +5,8 @@ import {
   updateProduct,
   deleteProduct,
 } from "../controllers/routeController.js";
+import { getProductsPopulatedWithCategory } from "../controllers/ProductWithCategory.js";
+import { addCategory } from "../controllers/addCategory.js";
 //--
 const router = express.Router();
 
@@ -17,4 +19,7 @@ router
   .put(updateProduct)
   .delete(deleteProduct);
 
+//--
+router.route("/addCategory").post(addCategory);
+router.get("/populated", getProductsPopulatedWithCategory);
 export default router;
