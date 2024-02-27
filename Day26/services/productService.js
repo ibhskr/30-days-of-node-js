@@ -1,9 +1,6 @@
 import Product from "../models/Product.js";
 
-/**
- * Executes an aggregation pipeline to calculate product statistics
- * @returns {Object} - Aggregated product statistics
- */
+
 async function getProductStatistics() {
   try {
     // Execute the aggregation pipeline
